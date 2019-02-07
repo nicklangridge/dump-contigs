@@ -16,7 +16,7 @@ def dump_species_contigs(species):
   assembly_info = rest(method)
   coord_sys = assembly_info['default_coord_system_version']
   chrs = assembly_info['karyotype']
-  print bed_header(species, coord_sys)
+  #print bed_header(species, coord_sys)
   for chr in chrs:
     dump_chr_contigs(species, coord_sys, chr)
   return
